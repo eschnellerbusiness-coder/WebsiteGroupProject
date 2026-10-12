@@ -1,0 +1,1 @@
+A small online store selling three parking-related products: a compact parking timer, a dashboard phone mount, and a reflective parking sign. The site demonstrates product browsing, search, checkout, and basic HTTP API requests without using a database.

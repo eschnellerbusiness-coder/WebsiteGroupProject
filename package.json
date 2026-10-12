@@ -1,0 +1,10 @@
+{
+  "name": "parking-meter-store",
+  "version": "1.0.0",
+  "description": "A small parking meter products storefront demonstrating a Node HTTP server and GET, POST, PUT, and DELETE API requests.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
