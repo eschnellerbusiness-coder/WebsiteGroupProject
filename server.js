@@ -6,7 +6,7 @@ const { URL } = require("url");
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, "public");
 
-const products = [
+const products = [ //creates the product objecs referenced in all the other bits of code for the most part
   { id: "timer", name: "Compact Parking Timer", price: 19.99, category: "Accessories", description: "A simple dashboard timer to help track parking time.", icon: "⏱️" },
   { id: "mount", name: "Dashboard Phone Mount", price: 24.99, category: "Accessories", description: "A sturdy mount that keeps your phone in view while parked.", icon: "📱" },
   { id: "sign", name: "Reflective Parking Sign", price: 14.99, category: "Signs", description: "A reflective sign for clearly marking a reserved parking space.", icon: "🅿️" }
@@ -23,7 +23,7 @@ const mimeTypes = {
   ".txt": "text/plain; charset=utf-8",
   ".json": "application/json; charset=utf-8"
 };
-
+ //funvtions. I have no clue what most of these do, the internet is wonderful grabbing code like legos.
 function sendJson(res, statusCode, data) {
   res.writeHead(statusCode, {
     "Content-Type": "application/json; charset=utf-8",

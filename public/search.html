@@ -51,7 +51,8 @@ footer a:hover { text-decoration:underline; }
   <div id="searchResults" class="row g-3"></div>
 </section>
 
-</main>
+</main> <!-- I used ai to make most of these comments btw.
+This is the "redirect to x page" part of the code"-->
 <footer class="mt-5 py-4 border-top border-2">
   <div class="container d-flex flex-wrap justify-content-between gap-2">
     <span>© 2026 Parking Meter Store — Student project demo</span>
@@ -60,7 +61,7 @@ footer a:hover { text-decoration:underline; }
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/app.js"></script>
-<script>
+<script> //This is the search function. Yes, I copied it from the internet. All the code I could ever want is just online waiting to be taken.
 const searchForm=document.getElementById("searchForm");
 async function searchProducts(term){
   const status=document.getElementById("searchStatus"), results=document.getElementById("searchResults");
@@ -74,7 +75,7 @@ async function searchProducts(term){
   } catch { status.textContent="Could not reach the API. Is the server running?"; }
 }
 searchForm.addEventListener("submit",event=>{event.preventDefault();searchProducts(document.getElementById("query").value.trim());});
-searchProducts("");
+searchProducts(""); //does the search here
 </script>
 </body>
 </html>
